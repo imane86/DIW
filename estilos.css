@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f3;
+    /* padding: 20px; */
+    color: black;
+}
+
+body {
+    background:url(img/pattern.png);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: black;
+    width: 100%;
+    height: 70px;
+}
+/* //nav */
+ #menu{
+    width: 80%;
+    height: 70%;
+    margin: 0 auto;
+
+}
+#menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    height: 70px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  #menu > ul >li {
+ 
+    margin-right: 15px;
+    margin-left: 15px;
+    text-align: left;
+
+    /* margin: 0 15px;
+    position: relative; */
+}
+
+#menu > ul > li  a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 15px;
+    transform: all 360ms;
+  }
+
+  #menu > ul > li  a:hover {
+    text-decoration: underline;
+    color: rgb(89, 141, 236);
+    transition: scale(1.2 , 1.2);
+
+  }
+
+  /* sublista */
+#menu > ul > li > ul {
+    display: none;
+    position: absolute;
+    background-color: black;
+    height: auto;
+    z-index: 1;
+
+    /* top: 70px;
+    left: 0;
+    width: 350px; */
+}
+
+
+#menu > ul > li:hover > ul {
+    display: block;
+}
+
+
+#menu > ul > li > ul > li {
+    border-top: 1px solid white;
+    height: 40px;
+    width: 350px;
+    line-height: 40px;
+}
+
+#menu > ul > li > ul > li:first-child{
+    margin-top: 20px;
+}
+
+#menu > ul > li > ul > li > a:hover {
+    transform: none;
+} 
+
+#menu ul li ul li a{
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/*BANNER H1*/
+
+#info{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#banner {
+    height: 100px;
+    border: 10px solid white;
+    box-shadow: 0px 0px 2px gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: url(img/bakbaner.png);
+
+
+    width: 90%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#banner h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+    text-shadow: 3px 3px 2px black;
+    letter-spacing: 2px;
+
+    font-size: 32px;
+}
+
+/*CONTENIDO CENTRAL*/
+#contenedor {
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+}
+
+/*CONTENIDO*/
+#contenido {
+    flex: 7;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#contenido h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    box-shadow: 0px 0px 2px gray;
+    background-color: grey;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 50px;
+
+}
+
+
+#contenido article  {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+
+    background-color: white;
+}
+
+
+#contenido article h4 a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: #003399;
+}
+
+
+#contenido article p{
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+/* BOTÓN BLOG */
+
+#blog{
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+}
+
+#blog a{
+    text-decoration: none;
+    font-size: 18px;
+    color: blue;
+    font-weight: bold;
+}
+
+aside {
+    flex: 3;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+aside h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    box-shadow: 0px 0px 2px ;
+    background-color: grey;
+    height: 30px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 30px;
+
+}
+
+
+/* LOGIN */
+
+#login {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#login form {
+    /* background-color: blueviolet; */
+
+    /* margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 30px; */
+
+    /* padding-top: 20px; */
+
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input {
+    /* display: block; */
+    margin: 10px;
+    height: 30px;
+    border: 1px solid black;
+    
+}
+
+#login input[type="email"],
+#login input[type="password"]{
+    display: block;
+    border: 1px solid black;
+    margin-top: 20px;
+    background-color: white;
+    width:95%;
+    
+}
+
+#user,
+#password{
+    position: absolute;
+    left: 8px;
+}
+
+#user {
+    /* position: absolute; */
+    margin-top: 30px;
+    margin-left: 8px;
+    
+}
+
+#password {
+    /* position: absolute; */
+    margin-top: 90px;
+    margin-left: 8px;
+}
+
+#login input[type="submit"],
+#login input[type="reset"]{
+
+    display: inline-block;
+
+
+    color: white;
+    background-color: rgb(82, 97, 238);
+    /* cursor: pointer; */
+    width: 48%;
+    height: 35px;
+    border: none;
+    font-weight: bold;
+    
+}
+
+#login a {
+    /* display: block; */
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+}
+
+/*REDES SOCIALES*/
+#social {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+#social img {
+    width: 40px;
+    margin: 0 5px;
+}
+
+/*PIE DE PAGINA*/
+footer {
+    width: 100%;
+    height: 70px;
+    line-height: 70 px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+footer h3 {
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    font-weight: normal;
+}
+
+
