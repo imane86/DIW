@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Productos | Tximeleta Bakery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="layout">
+
+<main class="main">
+
+    <h1 class="logo">Nuestros productos</h1>
+
+    <!-- BOLLERÍA -->
+    <section id="bolleria" class="productos">
+        <h2>Bollería</h2>
+
+        <article class="producto bolleria">
+            <img src="img/bolleria/croissant con glaceado.jpg" alt="Croissant con glaceado">
+            <h3>Croissant con glaceado</h3>
+            <p>Crujiente por fuera y tierno por dentro.</p>
+        </article>
+
+        <article class="producto bolleria">
+            <img src="img/bolleria/cup cakes.jpg" alt="Cup cakes">
+            <h3>Cup cakes</h3>
+            <p>Dulces artesanales decorados a mano.</p>
+        </article>
+
+        <article class="producto bolleria">
+            <img src="img/bolleria/pink pan cakes.jpg" alt="Pan cakes">
+            <h3>Pan cakes</h3>
+            <p>Esponjosos y llenos de sabor.</p>
+        </article>
+    </section>
+
+    <!-- TARTAS -->
+    <section id="tartas" class="productos ">
+        <h2>Tartas</h2>
+
+        <article class="producto tartas">
+            <img src="img/tartas/brazo gitano.jpg" alt="Brazo gitano">
+            <h3>Brazo gitano</h3>
+            <p>Relleno cremoso y suave.</p>
+        </article>
+
+        <article class="producto tartas">
+            <img src="img/tartas/pastel de chocolate rosa.jpg" alt="Pastel de chocolate rosa">
+            <h3>Pastel de chocolate rosa</h3>
+            <p>Chocolate con un toque especial.</p>
+        </article>
+
+        <article class="producto tartas">
+            <img src="img/tartas/baker.jpg" alt="Baker">
+            <h3>Baker</h3>
+            <p>Diseño exclusivo de la casa.</p>
+        </article>
+
+        <article class="producto tartas">
+            <img src="img/tartas/tartes display.jpg" alt="Tartes display">
+            <h3>Tartes display</h3>
+            <p>Perfectas para celebraciones.</p>
+        </article>
+    </section>
+
+    <!-- BEBIDAS -->
+    <section id="bebidas" class="productos">
+        <h2>Bebidas</h2>
+
+        <article class="producto bebidas">
+            <img src="img/bebidas/cafe con macarrons.jpg" alt="Café con macarrons">
+            <h3>Café con macarrons</h3>
+            <p>El acompañamiento perfecto.</p>
+        </article>
+
+        <article class="producto bebidas">
+            <img src="img/bebidas/jarra batido pink.jpg" alt="Batido con nata">
+            <h3>Batido con nata</h3>
+            <p>Cremoso y refrescante.</p>
+        </article>
+
+        <article class="producto bebidas">
+            <img src="img/bebidas/jarra con batido rosa.jpg" alt="Pink hot chocolate">
+            <h3>Pink hot chocolate</h3>
+            <p>Dulce y reconfortante.</p>
+        </article>
+
+        <article class="producto bebidas">
+            <img src="img/bebidas/smoothies.jpg" alt="Smoothies">
+            <h3>Smoothies</h3>
+            <p>Fruta natural y fresca.</p>
+        </article>
+    </section>
+
+    <!-- BRUNCH -->
+    <section id="brunch" class="productos">
+        <h2>Brunch</h2>
+
+        <article class="producto brunch">
+            <img src="img/brunch/brunch pink.jpg" alt="Happy brunch">
+            <h3>Happy brunch</h3>
+            <p>Ideal para compartir.</p>
+        </article>
+
+        <article class="producto brunch">
+            <img src="img/brunch/merinda pink.jpg" alt="Pinkish brunch">
+            <h3>Pinkish brunch</h3>
+            <p>La experiencia completa.</p>
+        </article>
+    </section>
+
+</main>
+
+<aside class="sidebar">
+    <h2>MENÚ</h2>
+    <!-- <ul class="menu-productos">
+        <li><a href="#bolleria">Bollería</a></li>
+        <li><a href="#tartas">Tartas</a></li>
+        <li><a href="#bebidas">Bebidas</a></li>
+        <li><a href="#brunch">Brunch</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul> -->
+
+<ul class="menu-productos">
+    <li><a href="#" onclick="filtrarProductos('todos')">Todos</a></li>
+    <li><a href="#" onclick="filtrarProductos('bolleria')">Bollería</a></li>
+    <li><a href="#" onclick="filtrarProductos('tartas')">Tartas</a></li>
+    <li><a href="#" onclick="filtrarProductos('bebidas')">Bebidas</a></li>
+    <li><a href="#" onclick="filtrarProductos('brunch')">Brunch</a></li>
+</ul>
+
+
+    <p class="slogan">Baked with love, just for you.</p>
+</aside>
+
+</body>
+
+<script src="js/productos.js"></script>
+
+
+</html>
+
+
+
+<!-- <section class="productos">
+    <article class="producto">
+        <img src="img/bolleria/croissant con glaceado.jpg" alt="Croissant con glaceado">
+        <h3>Croissant con glaceado</h3>
+        <p>Crujiente por fuera y tierno por dentro, elaborado con mantequilla.</p>
+    </article>
+
+    <article class="producto">
+        <img src="img/bolleria/cup cakes.jpg" alt="Cup cakes">
+        <h3>Cup cakes</h3>
+        <p>Rellena de chocolate negro, perfecta para el desayuno.</p>
+    </article>
+</section>
+
+ <article class="producto">
+        <img src="img/bolleria/pink pan cakes.jpg" alt="Pan cakes">
+        <h3>Pan cakes</h3>
+        <p>Rellena de chocolate negro, perfecta para el desayuno.</p>
+    </article>
+</section>
+
+ <article class="producto">
+        <img src="img/tartas/brazo gitano.jpg" alt="Brazo gitano">
+        <h3>Brazo gitano</h3>
+        <p>Rellena de chocolate negro, perfecta para el desayuno.</p>
+    </article>
+</section>
+
+ <article class="producto">
+        <img src="img/tartas/pastel de chocolate rosa.jpg" alt="Pastel de chocolate rosa">
+        <h3>Pastel de chocolate rosa</h3>
+        <p>Rellena de chocolate negro, perfecta para el desayuno.</p>
+    </article>
+</section>
+
+ <article class="producto">
+        <img src="img/tartas/baker.jpg" alt="Baker">
+        <h3>Baker</h3>
+        <p>Rellena de chocolate negro, perfecta para el desayuno.</p>
+    </article>
+</section>
+ <article class="producto">
+        <img src="img/tartas/tartes display.jpg" alt="Tartes display">
+        <h3>Tartes display</h3>
+        <p>Rellena de chocolate negro, perfecta para el desayuno.</p>
+    </article>
+</section>
+
+ <article class="producto">
+        <img src="img/bebidas/cafe con macarrons.jpg" alt="Café con macarrons">
+        <h3>Café con macarrons</h3>
+        <p>Rellena de chocolate negro, perfecta para el desayuno.</p>
+    </article>
+</section>
+
+ <article class="producto">
+        <img src="img/bebidas/jarra batido pink.jpg" alt="Batido con nata">
+        <h3>Batido con nata</h3>
+        <p>Rellena de chocolate negro, perfecta para el desayuno.</p>
+    </article>
+</section>
+
+ <article class="producto">
+        <img src="img/bebidas/jarra con batido rosa.jpg" alt="Pink hot chocolat">
+        <h3>Pink hot chocolat</h3>
+        <p>Rellena de chocolate negro, perfecta para el desayuno.</p>
+    </article>
+</section>
+
+ <article class="producto">
+        <img src="img/bebidas/smoothies.jpg" alt="Smoothies">
+        <h3>Smoothies</h3>
+        <p>Rellena de chocolate negro, perfecta para el desayuno.</p>
+    </article>
+</section>
+
+ <article class="producto">
+        <img src="img/brunch/brunch pink.jpg" alt="Happy brunch">
+        <h3>Happy brunch</h3>
+        <p>Rellena de chocolate negro, perfecta para el desayuno.</p>
+    </article>
+</section>
+<article class="producto">
+        <img src="img/brunch/merinda pink.jpg" alt="Pinkish brunch">
+        <h3>Pinkish brunch</h3>
+        <p>Rellena de chocolate negro, perfecta para el desayuno.</p>
+    </article>
+</section> -->

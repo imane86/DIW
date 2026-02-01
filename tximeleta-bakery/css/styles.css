@@ -1,0 +1,369 @@
+/* ================================
+   VARIABLES (FIGMA)
+================================ */
+:root {
+    --rosa-fondo: #f7e3dd;
+    --rosa-panel: #e7c8c2;
+    --rosa-claro: #ffffff;
+    --texto-principal: #d18978;
+    --texto-secundario: #9b5a4a;
+}
+
+/* ================================
+   RESET
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================================
+   BODY & LAYOUT
+================================ */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--rosa-fondo);
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ================================
+   MAIN
+================================ */
+.main {
+    flex: 1;
+    padding: 3rem 4rem;
+    color: var(--texto-principal);
+}
+
+/* LOGO */
+/* .logo-img {
+    width: 50%; 
+    border-radius: 1px solid #ccc;
+  
+
+} */
+
+.logo-img {
+    width: 90px;
+    margin-bottom: 1rem;
+}
+
+
+/* IMAGEN PRINCIPAL */
+.hero img {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 30px;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+/* TEXTO HISTORIA */
+.historia {
+    max-width: 520px;
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+/* 
+   SIDEBAR
+ */
+.sidebar {
+    width: 260px;
+    background-color: var(--rosa-panel);
+    border-radius: 40px 0 0 40px;
+    padding: 2.5rem 1.8rem;
+    text-align: center;
+}
+
+/* MENÚ */
+.sidebar h2 {
+    color: white;
+    letter-spacing: 3px;
+    margin-bottom: 1.8rem;
+}
+
+/* LISTA */
+.menu-productos {
+    list-style: none;
+}
+
+.menu-productos li {
+    margin: 0.8rem 0;
+}
+
+/* BOTONES MENÚ */
+.menu-productos a {
+    display: block;
+    background-color: var(--rosa-claro);
+    color: var(--texto-principal);
+    text-decoration: none;
+    padding: 0.45rem;
+    border-radius: 999px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.menu-productos a:hover {
+    background-color: #f2d6cf;
+}
+
+/* SLOGAN */
+.slogan {
+    margin-top: 3.5rem;
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* 
+   FOOTER
+ */
+.footer {
+    margin-top: 3rem;
+    background-color: var(--rosa-panel);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 30px;
+    font-size: 0.85rem;
+}
+
+/* 
+   PRODUCTOS
+*/
+.productos {
+    margin-top: 3rem;
+}
+
+.productos h2 {
+    margin-bottom: 1rem;
+}
+
+.producto {
+    margin-bottom: 1.5rem;
+}
+
+.producto img {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 20px;
+}
+
+.producto h3 {
+    margin-top: 0.5rem;
+}
+
+/* 
+   CONTACTO (FLEXBOX)
+ */
+.contacto-contenido {
+    display: flex;
+    gap: 2rem;
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    border-radius: 15px;
+    border: none;
+    padding: 0.6rem;
+}
+
+.contacto-form button {
+    padding: 0.6rem;
+    background-color: var(--texto-principal);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.contacto-form button:hover {
+    background-color: var(--texto-secundario);
+}
+
+/* 
+   RESPONSIVE
+ */
+@media (max-width: 768px) {
+
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-radius: 0 0 40px 40px;
+        margin-top: 2rem;
+    }
+
+    .main {
+        padding: 2rem;
+    }
+
+    .contacto-contenido {
+        flex-direction: column;
+    }
+}
+
+
+
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6e6e2;
+    color: #8a4b3c;
+}
+
+.header {
+    text-align: center;
+    padding: 2rem;
+}
+
+.logo {
+    font-size: 3rem;
+    font-family: 'Georgia', serif;
+}
+
+.menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 220px;
+    height: 100vh;
+    background-color: #e8cfc9;
+    padding: 2rem;
+}
+
+.menu ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.menu li {
+    margin: 0.7rem 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #8a4b3c;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.slogan {
+    margin-top: 2rem;
+    font-style: italic;
+}
+
+.contenido {
+    margin-right: 240px;
+    padding: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.historia {
+    margin-top: 1.5rem;
+    line-height: 1.6;
+}
+
+.footer {
+    margin-right: 240px;
+    padding: 1.5rem;
+    background-color: #e8cfc9;
+    margin-top: 2rem;
+    border-radius: 20px;
+} */
+
+/*productos*/
+/* .productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 15px;
+} */
+
+/*responsive design */
+/* @media (max-width: 768px) {
+    .menu {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .contenido,
+    .footer {
+        margin-right: 0;
+    }
+} */
+
+/* contactos
+.contacto-contenido {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.contacto-info {
+    flex: 1;
+}
+
+.contacto-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.contacto-form button {
+    padding: 0.7rem;
+    background-color: #8a4b3c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.contacto-form button:hover {
+    background-color: #6e3a2e;
+} */
+
+/* responsive contactos */
+/* @media (max-width: 768px) {
+    .contacto-contenido {
+        flex-direction: column;
+    }
+} */
